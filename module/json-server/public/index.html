@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>json-server실행</h3>
+    <button id="sub">댓글등록</button>
+    <button id="change">댓글수정</button>
+    <script>
+      //1번글 댓글 추가,
+      document.querySelector("#sub").addEventListener("click", (e) => {
+        fetch("http://localhost:3000/comments", {
+          method: "post",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ boday: "등록연습", postId: "1" }),
+        });
+      });
+      //추가된 글에 대한 수정,
+      document.querySelector("#change").addEventListener("click", (e) => {
+        fetch("http://localhost:3000/comments/1", {
+          method: "put",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ boday: "등록연습1", postId: "1" }),
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "1번글 제목",
+      "author": "user01"
+    },
+    {
+      "id": "24b0",
+      "title": "등록연습",
+      "author": "user99"
+    },
+    {
+      "id": "da79",
+      "title": "등록연습",
+      "author": "user99"
+    }
+  ],
+  "comments": [
+    {
+      "boday": "등록연습1",
+      "postId": "1",
+      "id": "1"
+    },
+    {
+      "id": "c677",
+      "boday": "등록연습",
+      "postId": "user99"
+    },
+    {
+      "id": "e422",
+      "boday": "등록연습",
+      "postId": "user99"
+    },
+    {
+      "id": "1510",
+      "boday": "등록연습",
+      "postId": "2"
+    },
+    {
+      "id": "ec74",
+      "boday": "등록연습",
+      "postId": "1"
+    },
+    {
+      "id": "6449",
+      "boday": "등록연습",
+      "postId": "2"
+    }
+  ]
+}
